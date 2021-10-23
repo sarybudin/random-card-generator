@@ -1,1 +1,44 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: green;
+}
+.card {
+  background: white;
+  width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.card > div:nth-child(1) {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 120px;
+}
+.card > div:nth-child(2) {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 180px;
+}
+.card > div:nth-child(3) {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 120px;
+}
+.card > div:nth-child(3) > font {
+  transform: rotate(180deg);
+}
+
+.spade,
+.club {
+  color: black;
+}
+
+.heart,
+.diamond {
+  color: red;
+}
